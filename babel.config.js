@@ -7,10 +7,14 @@ module.exports = function(api) {
       {
         useBuiltIns: "entry"
       }
-    ]
+    ],
+    "@babel/preset-react"
   ];
 
+  const plugins = ["react-hot-loader/babel"];
+
   return {
-    presets
+    presets,
+    plugins
   };
 };
