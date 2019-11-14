@@ -20,9 +20,9 @@ module.exports = {
     libraryTarget: "umd"
   },
   devServer: {
-    historyApiFallback: true,
-    open: true,
-    hot: true
+    historyApiFallback: true, // redirect all unresolved routes to index.html
+    open: true, // open the browser when built
+    hot: true // hot module enable
   },
   module: {
     rules: [
